@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 380" width="100%" height="100%">
+  <defs>
+    <linearGradient id="coop-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d1424" />
+      <stop offset="50%" stop-color="#111c33" />
+      <stop offset="100%" stop-color="#0a1f30" />
+    </linearGradient>
+    <linearGradient id="blue-amber" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3B82F6" />
+      <stop offset="100%" stop-color="#06B6D4" />
+    </linearGradient>
+    <linearGradient id="star-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F59E0B" />
+      <stop offset="100%" stop-color="#FBBF24" />
+    </linearGradient>
+    <linearGradient id="coop-card" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="rgba(30, 41, 59, 0.6)" />
+      <stop offset="100%" stop-color="rgba(15, 23, 42, 0.5)" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="600" height="380" fill="url(#coop-bg)" rx="12" />
+
+  <!-- Mockup Window -->
+  <rect x="40" y="35" width="520" height="310" rx="10" fill="#090f1d" stroke="rgba(255,255,255,0.12)" stroke-width="1.5" />
+  
+  <!-- Window Header -->
+  <rect x="40" y="35" width="520" height="34" rx="10" fill="#060a14" />
+  <rect x="40" y="60" width="520" height="9" fill="#060a14" />
+  <circle cx="62" cy="52" r="4.5" fill="#EF4444" opacity="0.8" />
+  <circle cx="78" cy="52" r="4.5" fill="#F59E0B" opacity="0.8" />
+  <circle cx="94" cy="52" r="4.5" fill="#10B981" opacity="0.8" />
+  <rect x="140" y="44" width="320" height="16" rx="8" fill="rgba(255,255,255,0.06)" />
+  <text x="300" y="56" fill="#94A3B8" font-size="9" font-family="'Plus Jakarta Sans', system-ui, sans-serif" text-anchor="middle">coopstarn.netlify.app</text>
+
+  <!-- Navbar -->
+  <g transform="translate(65, 82)">
+    <polygon points="12,2 15,9 23,10 17,16 19,23 12,19 5,23 7,16 1,10 9,9" fill="url(#star-grad)" />
+    <text x="30" y="18" fill="#FFFFFF" font-size="15" font-weight="bold" font-family="'Outfit', system-ui">CoopStar</text>
+    <text x="100" y="18" fill="#64748B" font-size="9" font-family="system-ui">Logística Inteligente</text>
+    
+    <!-- Nav items -->
+    <text x="310" y="17" fill="#94A3B8" font-size="9" font-family="system-ui">Início</text>
+    <text x="350" y="17" fill="#94A3B8" font-size="9" font-family="system-ui">Serviços</text>
+    <text x="400" y="17" fill="#38BDF8" font-size="9" font-weight="bold" font-family="system-ui">Contato</text>
+  </g>
+
+  <!-- Hero Section -->
+  <g transform="translate(65, 120)">
+    <rect width="470" height="95" rx="8" fill="url(#coop-card)" stroke="rgba(255,255,255,0.08)" stroke-width="1" />
+    <text x="20" y="32" fill="#FFFFFF" font-size="16" font-weight="bold" font-family="'Outfit', system-ui">Soluções Globais em Transporte &amp; Frete</text>
+    <text x="20" y="52" fill="#94A3B8" font-size="10" font-family="system-ui">Rastreamento em tempo real, frota moderna e pontualidade para sua empresa.</text>
+    
+    <rect x="20" y="64" width="95" height="22" rx="4" fill="url(#blue-amber)" />
+    <text x="67" y="79" fill="#FFFFFF" font-size="9" font-weight="bold" text-anchor="middle" font-family="system-ui">Cotar Envio</text>
+  </g>
+
+  <!-- 3 Service Columns -->
+  <g transform="translate(65, 230)">
+    <!-- Service 1 -->
+    <rect width="145" height="90" rx="8" fill="url(#coop-card)" stroke="rgba(255,255,255,0.06)" stroke-width="1" />
+    <circle cx="25" cy="25" r="12" fill="rgba(59,130,246,0.2)" />
+    <text x="25" y="29" fill="#38BDF8" font-size="11" text-anchor="middle">🚚</text>
+    <text x="45" y="28" fill="#FFFFFF" font-size="10" font-weight="bold" font-family="system-ui">Transporte Rodoviário</text>
+    <text x="14" y="55" fill="#94A3B8" font-size="8" font-family="system-ui">Entregas ágeis e seguras com frota rastreada 24 horas.</text>
+
+    <!-- Service 2 -->
+    <g transform="translate(162, 0)">
+      <rect width="145" height="90" rx="8" fill="url(#coop-card)" stroke="rgba(255,255,255,0.06)" stroke-width="1" />
+      <circle cx="25" cy="25" r="12" fill="rgba(6,182,212,0.2)" />
+      <text x="25" y="29" fill="#06B6D4" font-size="11" text-anchor="middle">📦</text>
+      <text x="45" y="28" fill="#FFFFFF" font-size="10" font-weight="bold" font-family="system-ui">Armazenagem</text>
+      <text x="14" y="55" fill="#94A3B8" font-size="8" font-family="system-ui">Galpões climatizados com gestão de estoque avançada.</text>
+    </g>
+
+    <!-- Service 3 -->
+    <g transform="translate(325, 0)">
+      <rect width="145" height="90" rx="8" fill="url(#coop-card)" stroke="rgba(255,255,255,0.06)" stroke-width="1" />
+      <circle cx="25" cy="25" r="12" fill="rgba(245,158,11,0.2)" />
+      <text x="25" y="29" fill="#F59E0B" font-size="11" text-anchor="middle">⚡</text>
+      <text x="45" y="28" fill="#FFFFFF" font-size="10" font-weight="bold" font-family="system-ui">Frete Expresso</text>
+      <text x="14" y="55" fill="#94A3B8" font-size="8" font-family="system-ui">Coleta no mesmo dia e prioridade operacional.</text>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,29 @@
+{
+  "name": "portfolio-nicoly-silva",
+  "version": "1.0.0",
+  "description": "Portfólio Profissional de Nicoly Silva — Estudante de Sistemas de Informação",
+  "main": "index.html",
+  "scripts": {
+    "start": "powershell -ExecutionPolicy Bypass -File ./server.ps1 -Port 8080",
+    "serve": "npx serve .",
+    "deploy:gh-pages": "powershell -ExecutionPolicy Bypass -File ./push_to_github.ps1"
+  },
+  "keywords": [
+    "portfolio",
+    "frontend",
+    "sistemas-de-informacao",
+    "web-development",
+    "responsive-design",
+    "nicoly-silva"
+  ],
+  "author": "Nicoly Silva <nycolys364@gmail.com> (https://github.com/nicolys363-stack)",
+  "license": "MIT",
+  "homepage": "https://github.com/nicolys363-stack/Portfolio-#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nicolys363-stack/Portfolio-.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nicolys363-stack/Portfolio-/issues"
+  }
+}
