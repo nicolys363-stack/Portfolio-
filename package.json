@@ -1,7 +1,7 @@
 {
   "name": "portfolio-nicoly-silva",
   "version": "1.0.0",
-  "description": "Portfólio Profissional de Nicoly Silva — Estudante de Sistemas de Informação",
+  "description": "Portfólio Profissional de Nicoly Silva - Estudante de Ciência da Computação na FIAP",
   "main": "index.html",
   "scripts": {
     "start": "powershell -ExecutionPolicy Bypass -File ./server.ps1 -Port 8080",
