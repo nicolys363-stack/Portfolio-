@@ -25,7 +25,7 @@
 
 Este repositório contém o código-fonte do portfólio profissional de **Nicoly Silva**, desenvolvido com foco em alta performance, estética moderna em **modo escuro com paleta roxa sofisticada**, design responsivo e arquitetura semântica limpa.
 
-O portfólio consolida sua trajetória acadêmica na graduação em **Sistemas de Informação na UNINOVE (1º semestre, Bolsista 100%)**, suas qualificações profissionais pelo **SENAI** e **SENAC**, além de seus principais projetos práticos desenvolvidos na área de desenvolvimento web e aplicações.
+O portfólio consolida sua trajetória acadêmica na graduação em **Sistemas de Informação na UNINOVE (2º semestre, Bolsista 100%)**, suas qualificações profissionais pelo **SENAI** e **SENAC**, além de seus principais projetos práticos desenvolvidos na área de desenvolvimento web e aplicações.
 
 ---
 
