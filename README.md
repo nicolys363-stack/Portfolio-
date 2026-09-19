@@ -2,7 +2,7 @@
 
 # 💜 Portfólio Profissional — Nicoly Silva
 
-**Estudante de Ciência da Computação na FIAP • Bolsista 100% • Desenvolvedora Web**
+**Estudante de Sistemas de Informação na UNINOVE • Bolsista 100% • Desenvolvedora Web**
 
 [![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
 [![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
@@ -25,7 +25,7 @@
 
 Este repositório contém o código-fonte do portfólio profissional de **Nicoly Silva**, desenvolvido com foco em alta performance, estética moderna em **modo escuro com paleta roxa sofisticada**, design responsivo e arquitetura semântica limpa.
 
-O portfólio consolida sua trajetória acadêmica na graduação em **Ciência da Computação na FIAP (1º semestre, Bolsista 100%)**, suas qualificações profissionais pelo **SENAI** e **SENAC**, além de seus principais projetos práticos desenvolvidos na área de desenvolvimento web e aplicações.
+O portfólio consolida sua trajetória acadêmica na graduação em **Sistemas de Informação na UNINOVE (1º semestre, Bolsista 100%)**, suas qualificações profissionais pelo **SENAI** e **SENAC**, além de seus principais projetos práticos desenvolvidos na área de desenvolvimento web e aplicações.
 
 ---
 
@@ -55,7 +55,7 @@ O portfólio consolida sua trajetória acadêmica na graduação em **Ciência d
 - **Desenvolvimento Web & Front-end:** HTML5, CSS3, JavaScript (ES6+), Design Responsivo, Flexbox/Grid, Glassmorphism.
 - **Dados & Aplicações:** Python, Fundamentos de Data Science, Modelagem & Persistência em Banco de Dados.
 - **Ferramentas & Design:** Google Antigravity, Prototipagem, UX/UI Design.
-- **Formações:** Graduação em Ciência da Computação na FIAP (em andamento, Bolsista 100%), Cursos SENAI & SENAC.
+- **Formações:** Graduação em Sistemas de Informação na UNINOVE (em andamento, Bolsista 100%), Cursos SENAI & SENAC.
 
 ---
 
