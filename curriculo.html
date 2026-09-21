@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Currículo Profissional — Nicoly Silva</title>
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    :root {
+      --cv-bg: #0D0817;
+      --cv-card-bg: rgba(22, 14, 38, 0.85);
+      --cv-border: rgba(147, 51, 234, 0.25);
+      --cv-accent: #A855F7;
+    }
+    body {
+      background-color: var(--cv-bg);
+      color: #E2E8F0;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      line-height: 1.6;
+      padding: 0;
+      margin: 0;
+    }
+    .cv-top-bar {
+      background: rgba(18, 11, 32, 0.9);
+      border-bottom: 1px solid var(--cv-border);
+      padding: 15px 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      backdrop-filter: blur(10px);
+    }
+    .cv-top-container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .cv-btn-back {
+      color: #A0AEC0;
+      text-decoration: none;
+      font-size: 0.9rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: color 0.2s;
+    }
+    .cv-btn-back:hover {
+      color: #FFF;
+    }
+    .cv-btn-print {
+      background: linear-gradient(135deg, #9333EA, #C084FC);
+      color: #FFF;
+      border: none;
+      padding: 9px 20px;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 0.88rem;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      box-shadow: 0 4px 14px rgba(147, 51, 234, 0.3);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .cv-btn-print:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(147, 51, 234, 0.5);
+    }
+    .cv-document {
+      max-width: 900px;
+      margin: 40px auto;
+      background: var(--cv-card-bg);
+      border: 1px solid var(--cv-border);
+      border-radius: 16px;
+      padding: 40px;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+    }
+    .cv-header {
+      border-bottom: 2px solid var(--cv-border);
+      padding-bottom: 25px;
+      margin-bottom: 30px;
+    }
+    .cv-name {
+      font-family: 'Outfit', sans-serif;
+      font-size: 2.2rem;
+      font-weight: 800;
+      margin: 0 0 6px 0;
+      color: #FFF;
+      letter-spacing: -0.5px;
+    }
+    .cv-title {
+      font-size: 1.1rem;
+      color: var(--cv-accent);
+      font-weight: 600;
+      margin: 0 0 16px 0;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    .cv-contact-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px 25px;
+      font-size: 0.9rem;
+      color: #CBD5E1;
+    }
+    .cv-contact-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .cv-contact-item a {
+      color: #C084FC;
+      text-decoration: none;
+    }
+    .cv-contact-item a:hover {
+      text-decoration: underline;
+    }
+    .cv-section {
+      margin-bottom: 35px;
+    }
+    .cv-section-title {
+      font-family: 'Outfit', sans-serif;
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: #FFF;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      border-left: 3px solid var(--cv-accent);
+      padding-left: 12px;
+      margin: 0 0 18px 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .cv-objective-text {
+      color: #CBD5E1;
+      font-size: 0.95rem;
+      margin: 0;
+    }
+    .cv-grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 15px;
+    }
+    .cv-skill-box {
+      background: rgba(18, 11, 32, 0.6);
+      border: 1px solid rgba(147, 51, 234, 0.15);
+      border-radius: 10px;
+      padding: 16px;
+    }
+    .cv-skill-box h4 {
+      margin: 0 0 8px 0;
+      color: #F1F5F9;
+      font-size: 0.95rem;
+    }
+    .cv-skill-box p {
+      margin: 0;
+      color: #94A3B8;
+      font-size: 0.88rem;
+    }
+    .cv-item {
+      margin-bottom: 20px;
+    }
+    .cv-item:last-child {
+      margin-bottom: 0;
+    }
+    .cv-item-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 4px;
+    }
+    .cv-item-role {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: #F8FAFC;
+    }
+    .cv-item-company {
+      color: #C084FC;
+      font-weight: 600;
+    }
+    .cv-item-period {
+      font-size: 0.85rem;
+      color: #94A3B8;
+    }
+    .cv-item-bullets {
+      margin: 8px 0 0 0;
+      padding-left: 18px;
+      color: #CBD5E1;
+      font-size: 0.9rem;
+    }
+    .cv-item-bullets li {
+      margin-bottom: 6px;
+    }
+    .cv-certs-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 12px;
+    }
+    .cv-cert-card {
+      background: rgba(18, 11, 32, 0.5);
+      border: 1px solid rgba(147, 51, 234, 0.15);
+      border-radius: 8px;
+      padding: 12px 16px;
+      font-size: 0.9rem;
+    }
+    .cv-cert-title {
+      font-weight: 600;
+      color: #F1F5F9;
+    }
+    .cv-cert-inst {
+      color: #94A3B8;
+      font-size: 0.82rem;
+      margin-top: 2px;
+    }
+
+    /* Print styles */
+    @media print {
+      .cv-top-bar { display: none; }
+      body { background: #FFF; color: #1E293B; }
+      .cv-document {
+        box-shadow: none;
+        border: none;
+        padding: 0;
+        margin: 0;
+        background: #FFF;
+        max-width: 100%;
+      }
+      .cv-name { color: #0F172A; }
+      .cv-title { color: #6B21A8; }
+      .cv-contact-list { color: #475569; }
+      .cv-contact-item a { color: #6B21A8; }
+      .cv-section-title { color: #0F172A; border-left-color: #6B21A8; }
+      .cv-objective-text, .cv-item-bullets { color: #334155; }
+      .cv-skill-box, .cv-cert-card { background: #F8FAFC; border-color: #E2E8F0; }
+      .cv-skill-box h4, .cv-item-role, .cv-cert-title { color: #0F172A; }
+      .cv-skill-box p, .cv-item-period, .cv-cert-inst { color: #64748B; }
+      .cv-item-company { color: #6B21A8; }
+    }
+
+    @media (max-width: 768px) {
+      .cv-document { padding: 24px; margin: 20px 10px; }
+      .cv-grid-2 { grid-template-columns: 1fr; }
+      .cv-item-header { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <div class="cv-top-bar">
+    <div class="cv-top-container">
+      <a href="index.html" class="cv-btn-back">
+        ← Voltar ao Portfólio
+      </a>
+      <button onclick="window.print()" class="cv-btn-print">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M6 9V2h12v7M6 18H4a2 2 0 01-2-2v-5a2 2 0 012-2h16a2 2 0 012 2v5a2 2 0 01-2 2h-2"/>
+          <path d="M6 14h12v8H6z"/>
+        </svg>
+        Imprimir / Salvar PDF
+      </button>
+    </div>
+  </div>
+
+  <!-- Resume Document Card -->
+  <main class="cv-document">
+    
+    <!-- Header -->
+    <header class="cv-header">
+      <h1 class="cv-name">NICOLY SILVA</h1>
+      <div class="cv-title">Estudante de Sistemas de Informação</div>
+      <div class="cv-contact-list">
+        <div class="cv-contact-item">📍 São Paulo – SP</div>
+        <div class="cv-contact-item">📞 (11) 98232-9710</div>
+        <div class="cv-contact-item">✉️ <a href="mailto:nicolys363@gmail.com">nicolys363@gmail.com</a></div>
+        <div class="cv-contact-item">🔗 <a href="https://www.linkedin.com/in/nicoly-silva-946a0a241" target="_blank">LinkedIn</a></div>
+        <div class="cv-contact-item">💻 <a href="https://github.com/nicolys363-stack" target="_blank">GitHub</a></div>
+      </div>
+    </header>
+
+    <!-- Objetivo Profissional -->
+    <section class="cv-section">
+      <h2 class="cv-section-title">Objetivo Profissional</h2>
+      <p class="cv-objective-text">
+        Estudante de Sistemas de Informação buscando oportunidade de <strong>Estágio ou posição inicial (Assistente / Jovem Aprendiz)</strong> nas áreas de <strong>Desenvolvimento de Software, Análise de Dados ou Suporte/Sistemas</strong>. Foco em aplicar conhecimentos em Python, Excel avançado e dashboards para a resolução de problemas e otimização de processos organizacionais.
+      </p>
+    </section>
+
+    <!-- Competências Técnicas & Soft Skills -->
+    <section class="cv-section">
+      <h2 class="cv-section-title">Competências Técnicas &amp; Soft Skills</h2>
+      <div class="cv-grid-2">
+        <div class="cv-skill-box">
+          <h4>Linguagens &amp; Ferramentas</h4>
+          <p>Python (Lógica de programação, análise de dados), Excel Avançado (Dashboards, fórmulas, planilhas interativas), Pacote Office.</p>
+        </div>
+        <div class="cv-skill-box">
+          <h4>Conceitos de TI</h4>
+          <p>Desenvolvimento de aplicações, estrutura de dados, conceitos de bancos de dados e análise de dados.</p>
+        </div>
+        <div class="cv-skill-box">
+          <h4>Comunicação &amp; Negociação</h4>
+          <p>Comunicação assertiva, oratória, atendimento a clientes, negociação e resolução de conflitos.</p>
+        </div>
+        <div class="cv-skill-box">
+          <h4>Habilidades Comportamentais</h4>
+          <p>Trabalho em equipe, proatividade, responsabilidade, raciocínio lógico e ética profissional.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Formação Acadêmica -->
+    <section class="cv-section">
+      <h2 class="cv-section-title">Formação Acadêmica</h2>
+      
+      <div class="cv-item">
+        <div class="cv-item-header">
+          <div>
+            <span class="cv-item-role">Bacharelado em Sistemas de Informação</span>
+            <span class="cv-item-company"> — Universidade Nove de Julho (UNINOVE)</span>
+          </div>
+          <span class="cv-item-period">Início: 2026 | Conclusão Prevista: 2030 (Bolsista 100%)</span>
+        </div>
+      </div>
+
+      <div class="cv-item">
+        <div class="cv-item-header">
+          <div>
+            <span class="cv-item-role">Ensino Médio Regular</span>
+            <span class="cv-item-company"> — E. E. Dr. Carlos Augusto de Freitas Villalva Jr.</span>
+          </div>
+          <span class="cv-item-period">Concluído em Dezembro/2025</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experiência Profissional -->
+    <section class="cv-section">
+      <h2 class="cv-section-title">Experiência Profissional</h2>
+      
+      <!-- Cargo 1 -->
+      <div class="cv-item">
+        <div class="cv-item-header">
+          <div>
+            <span class="cv-item-role">Operadora de Caixa</span>
+            <span class="cv-item-company"> — Farmácias Pague Menos</span>
+          </div>
+          <span class="cv-item-period">Atual</span>
+        </div>
+        <ul class="cv-item-bullets">
+          <li>Atendimento direto ao cliente no ponto de venda (PDV), garantindo agilidade, excelente comunicação e resolução de dúvidas.</li>
+          <li>Operação diária de sistema de caixa comercial, registro de produtos, pagamentos e controle de fluxo financeiro.</li>
+          <li>Atuação colaborativa com a equipe de loja para o atingimento e superação das metas diárias de vendas e serviços.</li>
+        </ul>
+      </div>
+
+      <!-- Cargo 2 -->
+      <div class="cv-item">
+        <div class="cv-item-header">
+          <div>
+            <span class="cv-item-role">Operadora de Telemarketing / Vendas</span>
+            <span class="cv-item-company"> — TIM</span>
+          </div>
+          <span class="cv-item-period">Maio de 2025</span>
+        </div>
+        <ul class="cv-item-bullets">
+          <li>Atendimento ativo e receptivo a clientes com foco em resolução de problemas, comunicação clara e cumprimento de metas.</li>
+          <li>Aplicação diária de técnicas de negociação, escuta ativa e registro estruturado de dados no sistema corporativo.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Cursos e Certificações -->
+    <section class="cv-section">
+      <h2 class="cv-section-title">Cursos e Certificações</h2>
+      <div class="cv-certs-grid">
+        <div class="cv-cert-card">
+          <div class="cv-cert-title">• Google Antigravity p/ Apps</div>
+          <div class="cv-cert-inst">SENAI</div>
+        </div>
+        <div class="cv-cert-card">
+          <div class="cv-cert-title">• Python para Data Science (60h)</div>
+          <div class="cv-cert-inst">SENAI</div>
+        </div>
+        <div class="cv-cert-card">
+          <div class="cv-cert-title">• Excel: Planilhas e Dashboards (28h)</div>
+          <div class="cv-cert-inst">SENAC</div>
+        </div>
+        <div class="cv-cert-card">
+          <div class="cv-cert-title">• Pacote Office (96h)</div>
+          <div class="cv-cert-inst">Fundação Bradesco</div>
+        </div>
+        <div class="cv-cert-card">
+          <div class="cv-cert-title">• Assistente Administrativo (160h)</div>
+          <div class="cv-cert-inst">SENAC</div>
+        </div>
+        <div class="cv-cert-card">
+          <div class="cv-cert-title">• Assistente de Marketing e Vendas (160h)</div>
+          <div class="cv-cert-inst">SENAC</div>
+        </div>
+        <div class="cv-cert-card">
+          <div class="cv-cert-title">• Relações Humanas e Ética (30h)</div>
+          <div class="cv-cert-inst">SEST SENAT</div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+</body>
+</html>

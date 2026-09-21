@@ -93,7 +93,7 @@ document.addEventListener('DOMContentLoaded', () => {
   if (copyEmailBtn) {
     copyEmailBtn.addEventListener('click', async (e) => {
       e.preventDefault();
-      const email = 'nycolys364@gmail.com';
+      const email = 'nicolys363@gmail.com';
 
       try {
         if (navigator.clipboard && window.isSecureContext) {
